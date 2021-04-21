@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\.."
+		},
+		{
+			"name": "4_DOF_Robotic_Arm_Teensy",
+			"path": ".."
+		}
+	],
+	"settings": {}
+}
