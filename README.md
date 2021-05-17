@@ -15,7 +15,7 @@
 8. (2) SH1106 OLED displays
 9. (1) Push button
 
-## In-depth Explantion of Project
+# In-depth Explantion of Project
 - The user is prompted through the Arduino serial monitor or terminal of their choice if they want to calibrate the MPU_9250. 
     - If the user enters '1' in the serial monitor, the calibration procedure will initiate. 
     - If the user enters '2', they can skip the calibration process completely.
@@ -31,7 +31,7 @@
 
 - The Wedmos D1 displays the recieved data on it's own SH1106 OLED display to give reassurnace that the transmitted data is being recieved from the Teensy 4.
 
-### Kalman Filter
+## Kalman Filter
 What’s a Kalman Filter?
 
 An algorithm that estimates an unknown variable based on the measurements given over time.
@@ -44,7 +44,7 @@ Why use a Kalman Filter?
 
 - KEEP IN MIND, the values used for the Kalman filter have NOT been fine tuned’ yet since the majority of the time spent on this project was focused on other aspects of this project; but the values will be fine tuned at a later date.
 
-## What's With All The Folders In The Repo?
+# What's With All The Folders In The Repo?
 
 Here's a quick run-down 
 
@@ -80,7 +80,7 @@ Here's a quick run-down
       - Recieves transmitted data
       - Display transmitted data on SH1106 OLED display
 
-## Why Use Two Microcontrollers to Recieve the Transmitted Data?
+# Why Use Two Microcontrollers to Recieve the Transmitted Data?
 
 The Arduino Nano/Uno has only 32 KB of on-board Flash memory.
 
@@ -92,7 +92,7 @@ However when the Servo libraries were included in the sketch/code, the watchdog 
 
 So rather than troubleshooting why the watchdog timer was being triggered, I took the easy way out of the entire situation and just had the Wedmos D1 display the data being recieved, while the Nano was being used to control the robotic arm and would display the transmitted data via the serial monitor.
 
-## FAQ
+# FAQ
 
 - Is the Wedmos D1 needed?
   - Honestly, not really. As mentioned earlier, the sole purpose of the Wedmos D1 was to display the transmitted data from the Teensy.
