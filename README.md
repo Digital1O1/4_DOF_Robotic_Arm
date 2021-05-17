@@ -60,3 +60,18 @@ Here's a quick run-down
     - To elaborate further :
       - One microcontroller transmits data
       - The other recieves it and sends an 'Acknowledgement' back to the transmitting microcontroller that data was recieved
+  
+  - Robotic_Arm_V3_NRF_Mesh
+    -  Teensy_Transmit_IMU_Data
+        - Transmit only the gryo/accel/magometer data to the recieving microcontrollers (Wedmos D1/ Nano)
+    - Teensy_Transmitter
+      - Gives user the option to calibrate the MPU_9250 or to skip the calibration process
+      - Calculate yaw/pitch/roll
+      - Display yaw/pitch/roll data on SH1106 OLED display
+      - Transmit yaw/pitch/roll datat to Wedmos/Nano microcontrollers
+    - Nano_Recieve_Robotic_Arm
+      - Recieves transmitted data from Teensy
+      - Microcontroller responsible for controlling Robotic Arm
+    - Wedmos_Recieve_Robotic_Arm
+      - Recieves transmitted data
+      - Display transmitted data on SH1106 OLED display
