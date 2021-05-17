@@ -55,7 +55,7 @@ Here's a quick run-down
 
 - NRF Folder
   - Contains all NRF24l01 code
-  - Hello World --> 
+  - Hello World 
     - One microcontroller transmits 'Hello World' while the other microcontroller recieves it and displays it on the serial monitor
   - Transmit_Array | Transmit_Struct
     - As the name implies, the transmitted data can be sent two ways. As an array, or as a struct. In reference to this project, the array method was used
